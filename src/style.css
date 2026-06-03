@@ -1,3 +1,57 @@
-main{
-    padding: 1%;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+main {
+  padding: 1%;
+  min-height: 80vh;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-brand {
+  margin-right: 3rem;
+}
+
+.navbar-brand img {
+  margin-right: 15px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-right: 3rem;
+  flex-wrap: wrap;
+}
+
+.dropdown-menu {
+  min-width: 180px;
+}
+
+.dropdown-item {
+  white-space: normal;
+  font-size: 14px;
+}
+
+/* Fix collapsed/mobile navbar spacing */
+@media (max-width: 991px) {
+  .navbar-nav {
+    gap: 0;
+    padding-right: 0;
+    margin-left: 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    box-shadow: none !important;
+  }
 }

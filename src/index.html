@@ -10,17 +10,51 @@
 
   </head>
   <body>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="../imgs/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-center me-10">
             JChanaś
             </a>
+            <!-- Hamburger Menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#"> Home </a>
+                    <a class="nav-link disabled" aria-disabled="true"> Fall Quarter </a>
+                    <a class="nav-link disabled" aria-disabled="true"> Winter Quarter </a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Spring Quarter </a>
+
+                        <ul class="dropdown-menu rounded-3 mx-0 shadow" data-bs-theme="light"> 
+                            <li><a class="dropdown-item rounded-2 nav-link disabled" href="#">Learning Outcome 1</a></li>
+                            <li><a class="dropdown-item rounded-2 nav-link disabled" href="#">Learning Outcome 2</a></li>
+                            <li><a class="dropdown-item rounded-2 nav-link disabled" href="#">Learning Outcome 3</a></li>
+                            <li><a class="dropdown-item rounded-2 nav-link disabled" href="#">Learning Outcome 4</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item rounded-2" href="#">Research Presentation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
         </div>
     </nav>
+
+    <header>
+
+    </header>
+
+    
 
     <main>
         <h1>Hello, world!</h1>
     </main>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
