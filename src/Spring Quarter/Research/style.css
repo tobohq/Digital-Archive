@@ -1,0 +1,98 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+main {
+  padding: 1%;
+  min-height: 80vh;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-brand {
+  margin-right: 3rem;
+}
+
+.navbar-brand img {
+  margin-right: 15px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-right: 3rem;
+  flex-wrap: wrap;
+}
+
+.dropdown-menu {
+  min-width: 180px;
+}
+
+.dropdown-item {
+  white-space: normal;
+  font-size: 14px;
+}
+
+/* Fix collapsed/mobile navbar spacing */
+@media (max-width: 991px) {
+  .navbar-nav {
+    gap: 0;
+    padding-right: 0;
+    margin-left: 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    box-shadow: none !important;
+  }
+}
+
+
+/* Header */
+
+.hero {
+    height: 100vh;
+    min-height: 400px;
+    background-image: url("../../../imgs/Dont\ Worry\ Darling.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Dark overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
