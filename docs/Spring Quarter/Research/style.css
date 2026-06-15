@@ -1,17 +1,27 @@
-html,
-body {
+@font-face {
+    font-family: "90sFonts";
+    src: url("../../fonts/ZTBrosOskon90s-Regular.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
   max-width: 100%;
   overflow-x: hidden;
-  min-height: 100vh;
+  min-height: 200vh;
+  background-color: #f1eada; 
 }
 
 main {
   padding: 1%;
-  min-height: 80vh;
+  height: 200vh;
 }
 
 .navbar {
   width: 100%;
+  background-color: #584738; /* Mahogany */
 }
 
 .navbar-brand {
@@ -29,6 +39,7 @@ main {
   gap: 3rem;
   padding-right: 3rem;
   flex-wrap: wrap;
+  color: #f1EADA;
 }
 
 .dropdown-menu {
@@ -60,9 +71,8 @@ main {
 /* Header */
 
 .hero {
-    height: 100vh;
-    min-height: 400px;
-    background-image: url("../../imgs/Dont-Worry-Darling.jpg");
+    height: 80vh;
+    background-image: url("../../imgs/AlexAndJack.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,21 +80,22 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
+    border-bottom-left-radius: 15%;
 }
 
-/* Dark overlay */
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+    background: linear-gradient(rgba(88, 71, 56, 0.30), rgba(88, 71, 56, 0.25));
+    border-bottom-left-radius: 15%;
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
     text-align: center;
-    color: white;
+    color: #f1EADA;
     padding: 1rem;
 }
 
@@ -95,4 +106,10 @@ main {
 
 .hero-content p {
     font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+/* Body Primary Source */
+
+.introduction {
+  background-color: #cec1a8;
 }
