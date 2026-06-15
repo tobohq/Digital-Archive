@@ -1,26 +1,30 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jayce Digital Archive</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../fonts.css" rel="stylesheet">
+    <link href="/docs/fonts.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
-  </head>
-  <body>
+</head>
+
+<body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand d-flex align-items-center" style="color: #f1EADA" href="index.html">
-            <img src="../../imgs/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-center me-10">
-            JChanaś
+                <img src="../../imgs/logo.jpg" alt="Logo" width="50" height="50"
+                    class="d-inline-block align-text-center me-10">
+                JChanaś
             </a>
             <!-- Hamburger Menu -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Links -->
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -28,42 +32,170 @@
                     <a class="nav-link" aria-current="page" style="color: #f1EADA" href="../../index.html"> Home </a>
                     <a class="nav-link disabled" aria-disabled="true" style="color: #878376;"> Fall Quarter </a>
                     <a class="nav-link disabled" aria-disabled="true" style="color: #878376;""> Winter Quarter </a>
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f1EADA"> Spring Quarter </a>
+                    <div class=" nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: #f1EADA"> Spring Quarter </a>
 
-                        <ul class="dropdown-menu rounded-3 mx-0 shadow"> 
-                            <li><a class="dropdown-item rounded-2 nav-link disabled" href="#">Learning Outcome 1</a></li>
-                            <li><a class="dropdown-item rounded-2 nav-link disabled" href="#">Learning Outcome 2</a></li>
-                            <li><a class="dropdown-item rounded-2 nav-link disabled" href="#">Learning Outcome 3</a></li>
-                            <li><a class="dropdown-item rounded-2 nav-link disabled" href="#">Learning Outcome 4</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="nav-link active dropdown-item rounded-2" href="index.html">Research Presentation</a></li>
+                        <ul class="dropdown-menu rounded-3 mx-0 shadow">
+                            <li><a class="dropdown-item rounded-2 nav-link disabled" href="#">Learning Outcome 1</a>
+                            </li>
+                            <li><a class="dropdown-item rounded-2 nav-link disabled" href="#">Learning Outcome 2</a>
+                            </li>
+                            <li><a class="dropdown-item rounded-2 nav-link disabled" href="#">Learning Outcome 3</a>
+                            </li>
+                            <li><a class="dropdown-item rounded-2 nav-link disabled" href="#">Learning Outcome 4</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="nav-link active dropdown-item rounded-2" href="index.html">Research
+                                    Presentation</a></li>
                         </ul>
-                    </div>
                 </div>
-            </div> 
+            </div>
+        </div>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Don't Worry Darling</h1>
-            <p> Capitalism • Capitalism • Patriarchy • Escapisim</p>
-        </div>
-    </header>
+    <div id="introduction">
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Don't Worry Darling</h1>
+                <p> Neoliberalism • Patriarchy • #TradWife • Dystopia </p>
+            </div>
+        </header>
+    </div>
 
     <main>
-        <div class="primary-source">
-            <h3> watch the trailer! </h3>
+        <div class="music-player">
+            <audio controls>
+                <source src="../../audio/Oogum Boogum Song 128k.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="intro">
+            <div id="realSitesCarousel" class="carousel slide archive-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#realSitesCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#realSitesCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#realSitesCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#realSitesCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#realSitesCarousel" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../../imgs/Kaufmann-House.avif" class="d-block w-100 carousel-img"
+                            alt="Kaufmann House">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../../imgs/Volcano-House.webp" class="d-block w-100 carousel-img" alt="Cicada Club">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../../imgs/Cicada Club 1950s.avif" class="d-block w-100 carousel-img"
+                            alt="Volcano House">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../../imgs/Cicada Club 1950s.avif" class="d-block w-100 carousel-img"
+                            alt="Volcano House">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../../imgs/Cicada Club 1950s.avif" class="d-block w-100 carousel-img"
+                            alt="Volcano House">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#realSitesCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#realSitesCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
             <div class="text">
-                <h3> Don't Worry Darling </h3>
-                <p> Imagine placing yourself in a modern 1950's world, </p>
+                <p> Put yourself in the 1950s, during the post-World War II era, during the second industrialization era
+                    where the ideal family dynamic was born. Its recognized as men heading out to work while women
+                    stayed
+                    at home and took care of household duties. </p>
+
+                <p> Where you are putting yourself right now is exactly how contemporary society wishes to return to.
+                    hence the political phrase:
+                    “Make America Great Again” </p>
+
+                <p> Interact with these carousel's to see moments of the past! </p>
+            </div>
+
+            <div id="victoryCarousel" class="carousel slide archive-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#victoryCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#victoryCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#victoryCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../../imgs/Kaufmann-House.avif" class="d-block w-100 carousel-img"
+                            alt="Kaufmann House">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../../imgs/Volcano-House.webp" class="d-block w-100 carousel-img" alt="Cicada Club">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../../imgs/Cicada Club 1950s.avif" class="d-block w-100 carousel-img"
+                            alt="Volcano House">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#victoryCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#victoryCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="primary">
+            <h2> Don't Worry Darling </h2>
+            <p> You're safe here. Don't stress about anything. We'll take care of it. </p>
+            <div class="panel-image">
+                <div class="text">
+                    <p> </p>
+                </div>
+                <div class="image">
+                    <img src>
+                    <p> </p>
+                </div>
             </div>
         </div>
 
         <div class="secondary-source">
-            
+
         </div>
 
         <div class="methods">
@@ -77,6 +209,9 @@
     </main>
 
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

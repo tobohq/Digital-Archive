@@ -1,6 +1,14 @@
 @font-face {
-    font-family: "90sFonts";
-    src: url("../../fonts/ZTBrosOskon90s-Regular.otf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+    font-family: "DWD-Font";
+    src: url("/docs/fonts/ZTBrosOskon90s-Regular.otf");
+}
+
+@font-face {
+    font-family: "BringBold-Nineties";
+    src: url("/docs/fonts/Bringbold\ Nineties\ Demo.otf");
+}
+
+@font-face {
+    font-family: "History-Nineties";
+    src: url("/docs/fonts/History\ Nineties.ttf");
 }
