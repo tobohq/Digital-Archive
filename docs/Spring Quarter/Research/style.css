@@ -144,3 +144,53 @@ main {
   object-fit: cover;
 }
 
+/* Don't Worry Darling - Plot */
+.primary{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+.panel-image {
+  min-width: 90%;
+  min-height: 60vh;
+  background-color: #B59E7D;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+
+.text{
+  min-width: 50%;
+  padding: 1%;
+}
+
+#small{
+  font-size: small;
+}
+
+.card-image {
+  min-width: 50%;
+  min-height: 50vh;
+  background-color: #cec1a8;
+  border: 5px solid #aaa396;
+  border-radius: 25px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card-image p{
+  padding-top: 2.5%;
+  margin-bottom: -5px;
+  width: 95%;
+}
+
+
