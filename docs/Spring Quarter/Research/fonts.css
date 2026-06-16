@@ -12,3 +12,46 @@
     font-family: "History-Nineties";
     src: url("../../fonts/History\ Nineties.ttf");
 }
+
+@font-face {
+    font-family: "Arcane-Nine";
+    src: url("../../fonts/Arcane\ Nine.otf");
+}
+
+
+@font-face {
+    font-family: "Auroxa";
+    src: url("../../fonts/Auroxa.ttf");
+}
+
+@font-face {
+    font-family: "Sims-Sans";
+    src: url("../../fonts/Loucos\ Lyne\ -\ thesimssansbold.otf");
+}
+
+@font-face {
+    font-family: "coolvectica-condensed";
+    src: url("../../fonts/coolvetica\ condensed\ rg.otf");
+}
+
+@font-face {
+    font-family: "coolvectica";
+    src: url("../../fonts/coolvetica\ rg.otf");
+}
+
+@font-face {
+    font-family: "coolvectica-cramp";
+    src: url("../../fonts/Coolvetica\ Rg\ Cond.otf");
+}
+
+@font-face {
+    font-family: "Garamond-Light";
+    src: url("../../fonts/AppleGaramond-Light.ttf");
+}
+
+@font-face {
+    font-family: "Garamond";
+    src: url("../../fonts/AppleGaramond.ttf");
+}
+
+

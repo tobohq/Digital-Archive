@@ -8,8 +8,9 @@ html,body {
 }
 
 main {
-  height: 200vh;
-  font-family: "History-Nineties"
+  height: 500vh;
+  font-family: "Garamond";
+  font-size: large;
 }
 
 .navbar {
@@ -74,7 +75,7 @@ main {
     align-items: center;
     position: relative;
     border-bottom-left-radius: 15%;
-    font-family: "History-Nineties";
+    font-family: "Arcane-Nine";
 }
 
 .hero::before {
@@ -144,7 +145,7 @@ main {
   object-fit: cover;
 }
 
-/* Don't Worry Darling - Plot */
+/* Don't Worry Darling - Primary */
 .primary{
   display: flex;
   flex-direction: column;
@@ -156,7 +157,6 @@ main {
 .panel-image {
   min-width: 90%;
   min-height: 60vh;
-  background-color: #B59E7D;
   border-radius: 25px;
   display: flex;
   justify-content: center;
@@ -164,17 +164,40 @@ main {
   padding: 3%;
 }
 
+#victory-section {
+  background-color: #B59E7D;
+  background-image: none;
+  color: #1a1001;
+  transition: all 0.8s ease;
+}
+
+#victory-section.truth {
+  background-image: url("../../imgs/scary.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #f1eada;
+  flex-direction: row-reverse;
+}
+
+#victory-section.truth .text {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 2rem;
+  border-radius: 25px;
+  backdrop-filter: blur(2px);
+  margin-left: 20px;
+}
+
 .text{
   min-width: 50%;
   padding: 1%;
 }
 
-#small{
+#small-text{
   font-size: small;
 }
 
-.card-image {
-  min-width: 50%;
+#card-image {
+  min-width: 48%;
   min-height: 50vh;
   background-color: #cec1a8;
   border: 5px solid #aaa396;
@@ -187,10 +210,153 @@ main {
   padding: 1rem;
 }
 
-.card-image p{
-  padding-top: 2.5%;
-  margin-bottom: -5px;
-  width: 95%;
+#card-image.fact {
+  min-width: 50%;
+  min-height: 5vh;
+  background-color: #000000;
+  border: 5px solid #aaa396;
 }
 
+#card-image p{
+  padding-top: 2.5%;
+  margin-bottom: -5px;
+  width: 100%;
+}
 
+/* Little Videos */
+
+.video-gallery {
+  width: 100%;
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #f1eada;
+}
+
+.video-warning {
+  margin-bottom: 2rem;
+  font-family: "Garamond", serif;
+}
+
+.video-row {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.mini-video {
+  width: 400px;
+  height: 280px;
+  object-fit: cover;
+  background-color: #1e1b1f;
+  border-radius: 25px;
+}
+
+#wake-button {
+    background-color: #584738;
+    color: #f1eada;
+    border: 3px solid #3d2f24;
+    border-radius: 12px;
+    padding: 12px 30px;
+    font-size: 1.3rem;
+    font-family: "Arcane-Nine";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(8, 22, 101, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(155,37,37,0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(155,37,37,0);
+    }
+}
+
+#wake-button:hover {
+    background-color: #6d5845;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+#wake-button:active {
+    transform: translateY(1px);
+}
+
+/* Secondary Sources */
+
+.secondary-source{
+  background-color: #584738;
+  color: #f1eada;
+  min-height: 70vh;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.secondary-source h1{
+  padding: 1rem 1rem;
+}
+
+.pdf-section {
+  background-color: #584738;
+  padding: 4rem 2rem;
+}
+
+.pdf-grid {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pdf-card {
+  width: 300px;
+  background-color: #f1eada;
+  color: #1a1001;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.pdf-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+.pdf-preview {
+  height: 260px;
+  background-color: #ddd;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.pdf-preview iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.pdf-card h6 {
+  margin-top: 1rem;
+}
+
+.pdf-label {
+  font-weight: bold;
+}

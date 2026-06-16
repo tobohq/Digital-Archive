@@ -181,47 +181,121 @@
         </div>
 
         <div class="primary">
-            <h2> Don't Worry Darling </h2>
-            <p> You're safe here. Don't stress about anything. We'll take care of it. </p>
-            <div class="panel-image">
+            <h2 style="font-family: Arcane-Nine"> Don't Worry Darling </h2>
+            <p style="font-family: Arcane-Nine"> You're safe here. Don't stress about anything. We'll take care of it.
+            </p>
+            <section class="panel-image" id="victory-section">
                 <div class="text">
-                    <h3> About The Primary Source </h3>
-                    <p id="small"> (trailer provides more context, i might be hiding) </p>
-                    <p>
-                        I asked you to imagine yourself living in a 1950s society. As you clicked through the carousels, 
-                        you may have noticed how similar the images on the left and right appeared. That is because the 
-                        images on the right come from our primary source, <i>Don't Worry Darling</i>, which draws inspiration
+                    <h3 style="font-family: Arcane-Nine" id="victory-title"> Welcome to Victory </h3>
+                    <p id="small-text" style="font-family: Arcane-Nine"> (watch trailer) </p>
+                    <p id="victory-text">
+                        I asked you to imagine yourself living in a 1950s society. As you clicked through the carousels,
+                        you may have noticed how similar the images on the left and right appeared. That is because the
+                        images on the right come from our primary source, <i>Don't Worry Darling</i>, which draws
+                        inspiration
                         from the architecture, aesthetics, and ideals of 1950s America. <br><br>
-                        
-                        Congratulations! You're living in the romanticized past. Welcome to Victory, 
-                        a community designed to give its residents the perfect life. Here, every day is predictable, comfortable, and secure. 
-                        Men leave for work each morning while women enjoy beautiful homes, shopping, hanging with other women and a carefree lifestyle 
-                        free from financial concerns. There is no need to worry about paying bills, planning for the future, or 
+
+                        Congratulations! You're living in the romanticized past contemporary society seeked. Welcome to
+                        Victory,
+                        a community designed to give its residents the perfect life. Here, every day is predictable,
+                        comfortable, and secure.
+                        Men leave for work each morning while women enjoy beautiful homes, shopping, hanging with other
+                        women and a carefree lifestyle
+                        free from financial concerns. There is no need to worry about paying bills, planning for the
+                        future, or
                         navigating any uncertainties. Everything you could ever need is already provided. <br><br>
-                        
-                        In Victory, luxury, stability, and happiness are simply a way of life. It is a place where everyone knows 
-                        their role, everything has its place, and life feels effortless. After all, you're safe here. Don't worry, darling.
+
+                        In Victory, luxury, stability, and happiness are simply a way of life. It is a place where
+                        everyone knows
+                        their role, everything has its place, and life feels effortless. After all, you're safe here.
+                        Don't worry, darling.
                     </p>
                 </div>
-                <div class="card-image">
-                    <iframe width="95%" height="280px" src="https://www.youtube.com/embed/FgmnKsED-jU?si=8kqqslvGLW95yj1a" 
-                    title="YouTube video player" allow="accelerometer; 
-                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                    <p> Budget: $35M <br> 
-                        Box Office: $87M <br> 
-                        RT Score: 38%  
+                <section id="card-image">
+                    <div id="video-container">
+                        <iframe id="youtube-video" width="460" height="280"
+                            src="https://www.youtube.com/embed/FgmnKsED-jU" allowfullscreen>
+                        </iframe>
+
+                        <!-- Local MP4 -->
+                        <video id="truth-video" width="460" height="450" controls style="display:none;">
+                            <source src="../../videos/truth.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <p style="font-family: Arcane-Nine" id="stats"> Budget: $35M <br>
+                        Box Office: $87M <br>
+                        RT Score: 38%
                     </p>
+                </section>
+            </section>
+            <section class="video-gallery">
+                <h3 style="font-family: Arcane-Nine"> wait... something isn't right </h3>
+                <p style="font-family: Arcane-Nine"> watch the videos then press the button </p>
+                <div class="video-row">
+                    <video class="mini-video" controls>
+                        <source src="../../videos/shallow.mp4" type="video/mp4">
+                    </video>
+
+                    <video class="mini-video" controls>
+                        <source src="../../videos/alice by pool.mp4" type="video/mp4">
+                    </video>
+
+                    <video class="mini-video" controls>
+                        <source src="../../videos/plane.mp4" type="video/mp4">
+                    </video>
                 </div>
-            </div>
-            <h3> wait... something isn't right </h3>
-            <p> watch the videos then press the button </p>
-            <button> Press me </button>
+            </section>
+
+            <button id="wake-button" onclick="toggleVictory()">
+                Wake Up
+            </button>
         </div>
 
         <div class="secondary-source">
+            <h1> Scholarly Conversations </h1>
+            <div class="pdf-grid">
 
+                <a class="pdf-card" href="../../pdfs/source1.pdf" target="_blank">
+                    <div class="pdf-preview">
+                        <iframe src="../../pdfs/source1.pdf"></iframe>
+                    </div>
+                    <h6> Don’t Worry Darling: Critiquing the nostalgic cultural logic of late patriarchy</h6>
+                    <p>Brief description here.</p>
+                </a>
+
+                <a class="pdf-card" href="../../pdfs/source2.pdf" target="_blank">
+                    <div class="pdf-preview">
+                        <iframe src="../../pdfs/source2.pdf"></iframe>
+                    </div>
+                    <h6> The Male Imagination in Literature and Cinema: Asaf Halet Çelebi's Poem ''My Woman'' and the Film Don't Worry My Darling </h6>
+                    <p>Brief description here.</p>
+                </a>
+
+                <a class="pdf-card" href="../../pdfs/source3.pdf" target="_blank">
+                    <div class="pdf-preview">
+                        <iframe src="../../pdfs/source3.pdf"></iframe>
+                    </div>
+                    <h6> SOCIAL GASLIGHTING AND EPISTEMIC MANIPULATION IN PATRIARCHAL SYSTEMS: A CASE STUDY OF THE FILM DON’T WORRY DARLING (2022)</h6>
+                    <p>Brief description here.</p>
+                </a>
+
+                <a class="pdf-card" href="../../pdfs/source4.pdf" target="_blank">
+                    <div class="pdf-preview">
+                        <iframe src="../../pdfs/source4.pdf"></iframe>
+                    </div>
+                    <h6> Imagined and liquid reality, dystopia and virtuality in science fiction cinema: Don’t Worry Darling, a case study</h6>
+                    <p>Brief description here.</p>
+                </a>
+
+                <a class="pdf-card" href="../../pdfs/source5.pdf" target="_blank">
+                    <div class="pdf-preview">
+                        <iframe src="../../pdfs/source5.pdf"></iframe>
+                    </div>
+                    <h6> Don’t Worry Darling: The anxious question of what women want after #MeToo? </h6>
+                    <p>Brief description here.</p>
+                </a>
+
+            </div>
         </div>
 
         <div class="methods">
